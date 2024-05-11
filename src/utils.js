@@ -1,4 +1,4 @@
-domain = "https://composite-baton-420802.ue.r.appspot.com/";
+const domain = "https://composite-baton-420802.ue.r.appspot.com/";
 
 const handleResponseStatus = (response, errMsg) => {
   const { status, ok } = response;
