@@ -1,4 +1,4 @@
-const domain = "https://composite-baton-420802.ue.r.appspot.com/";
+const domain = "https://composite-baton-420802.ue.r.appspot.com";
 
 const handleResponseStatus = (response, errMsg) => {
   const { status, ok } = response;
@@ -15,6 +15,7 @@ const handleResponseStatus = (response, errMsg) => {
 };
 
 export const login = (credential) => {
+  console.log(credential);
   const url = `${domain}/signin`;
   return fetch(url, {
     method: "POST",

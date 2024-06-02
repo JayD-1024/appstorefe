@@ -1,7 +1,8 @@
-import { Layout, Dropdown, Menu, Button } from "antd";
+import { Layout, Dropdown, Menu, Button, message } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 import React, { useEffect, useState } from "react";
 import LoginForm from "./components/LoginForm";
+import HomePage from "./components/HomePage";
 
 const { Header, Content } = Layout;
 
@@ -13,8 +14,15 @@ const App = () => {
     setAuthed(authToken !== null);
   }, []);
 
+  useEffect(() => {
+    const query = new URLSearchParams(window.location.search);
+    if (query.get("success")) {
+      message.success("Order placed!");
+    }
+  }, []);
+
   const handleLoginSuccess = () => {
-    setAuthed(false);
+    setAuthed(true);
   };
 
   const handleLogOut = () => {
@@ -31,6 +39,7 @@ const App = () => {
       return <LoginForm onLoginSuccess={handleLoginSuccess} />;
     }
 
+    return <HomePage />;
   };
 
   const userMenu = (
