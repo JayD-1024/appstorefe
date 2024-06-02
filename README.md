@@ -1,4 +1,35 @@
-<<<<<<< HEAD
+# App Stream
+
+## Overview
+
+App Stream is a cloud-based application purchase platform built with React. It aims to provide users with a convenient platform to create, browse, and purchase software. By using modern development technologies and tools, App Stream offers a smooth user experience and powerful features.
+
+![Home Page](https://github.com/JayD-1024/appstorefe/blob/master/public/HomePage.PNG)
+![Post App](https://github.com/JayD-1024/appstorefe/blob/master/public/PostApp.PNG)
+![Payment](https://github.com/JayD-1024/appstorefe/blob/master/public/Payment.PNG)
+![Sign Up](https://github.com/JayD-1024/appstorefe/blob/master/public/SignUp.PNG)
+
+## Features
+
+### Frontend
+- Designed and implemented a web application using React JS.
+- Features for users to create, browse, and search software.
+- Built a responsive and intuitive UI with antD, supporting file uploads.
+- Improved authentication using token-based registration/login/logout flow with JWT.
+
+### Backend
+- Developed a microservice in Go to handle register/login/upload/checkout and deployed it to Google Cloud (Google App Engine).
+- Used ElasticSearch deployed to GCE to provide search functionality, allowing users to search for software.
+- Integrated with Stripe API for checkout and viewing history information.
+
+## Technologies
+- **React JS:** Used for frontend development to create the user interface.
+- **antD:** Frontend UI framework for building responsive user interfaces.
+- **JWT:** Used for token-based authentication.
+- **Go:** Used for developing backend microservices.
+- **ElasticSearch:** Used to provide search functionality.
+- **Stripe API:** Used for payment processing.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,6 +100,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# appstorefe
->>>>>>> e8dfba0d473fe28d6f8ee4508dd5a9e94e57b529
